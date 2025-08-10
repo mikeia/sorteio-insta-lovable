@@ -145,10 +145,10 @@ const GiveawayDraw = () => {
         {/* Header */}
         <div className="text-center space-y-4">
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Giveaway Draw
+            Sorteio Insta
           </h1>
           <p className="text-xl text-muted-foreground">
-            Enter participants and let luck decide the winners
+            Informe a lista de participantes para o sorteio
           </p>
         </div>
 
@@ -164,7 +164,7 @@ const GiveawayDraw = () => {
               <Textarea
                 value={participantText}
                 onChange={(e) => setParticipantText(e.target.value)}
-                placeholder="Enter participants in format: number - name&#10;Example:&#10;1 - John Doe&#10;2 - Jane Smith&#10;3 - Bob Wilson"
+                placeholder="Informe os participantes no formato: numero - nome&#10;Exemplo:&#10;1 - John Doe&#10;2 - Jane Smith&#10;3 - Bob Wilson"
                 className="min-h-[200px] resize-none"
               />
               
@@ -176,7 +176,7 @@ const GiveawayDraw = () => {
                   className="flex-1"
                   disabled={!participantText.trim()}
                 >
-                  Load Participants
+                 Carregar Participantes
                 </Button>
                 
                 <Button 
@@ -215,7 +215,7 @@ const GiveawayDraw = () => {
                   disabled={isDrawing || winners.length === 0}
                 >
                   <RotateCcw className="h-4 w-4 mr-2" />
-                  Reset
+                  Refazer 
                 </Button>
                 
                 <Button
@@ -223,7 +223,7 @@ const GiveawayDraw = () => {
                   variant="outline"
                 >
                   <Trash2 className="h-4 w-4 mr-2" />
-                  Clear All
+                  Limpar Tudo
                 </Button>
               </div>
             </div>
