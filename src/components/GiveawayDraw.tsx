@@ -199,12 +199,12 @@ const GiveawayDraw = () => {
               <div className="flex gap-4">
                 <Badge variant="secondary" className="text-lg px-4 py-2">
                   <Users className="h-4 w-4 mr-2" />
-                  {participants.length} remaining
+                  {participants.length} participando
                 </Badge>
                 
                 <Badge variant="outline" className="text-lg px-4 py-2">
                   <Trophy className="h-4 w-4 mr-2" />
-                  {winners.length} drawn
+                  {winners.length} vencedor
                 </Badge>
               </div>
 
@@ -240,7 +240,7 @@ const GiveawayDraw = () => {
                   transition-all duration-300
                 `}
               >
-                {isDrawing ? 'Drawing Winner...' : 'Draw Winner'}
+                {isDrawing ? 'Carregando Vencedor...' : 'Mostrar Vencedor'}
               </Button>
             </div>
 
@@ -250,7 +250,7 @@ const GiveawayDraw = () => {
                 <div className="text-center space-y-4">
                   <div className="flex items-center justify-center gap-2 text-winner-foreground">
                     <Trophy className="h-8 w-8" />
-                    <h2 className="text-3xl font-bold">Winner #{currentWinner.position}</h2>
+                    <h2 className="text-3xl font-bold">Vencedor(a) #{currentWinner.position}</h2>
                   </div>
                   
                   <div className="space-y-2 text-winner-foreground">
@@ -269,7 +269,7 @@ const GiveawayDraw = () => {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-accent" />
-                Winners History
+                Historico de Vencedores
               </h3>
               
               <div className="grid gap-3 max-h-64 overflow-y-auto">
