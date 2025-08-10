@@ -158,13 +158,13 @@ const GiveawayDraw = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-primary" />
-                <h2 className="text-xl font-semibold">Add Participants</h2>
+                <h2 className="text-xl font-semibold">Adicionar Participantes</h2>
               </div>
               
               <Textarea
                 value={participantText}
                 onChange={(e) => setParticipantText(e.target.value)}
-                placeholder="Informe os participantes no formato: numero - nome&#10;Exemplo:&#10;1 - John Doe&#10;2 - Jane Smith&#10;3 - Bob Wilson"
+                placeholder="Informe os participantes no formato: numero - nome&#10;Exemplo:&#10; 1 - John Doe&#10;2 - Jane Smith&#10;3 - Bob Wilson"
                 className="min-h-[200px] resize-none"
               />
               
